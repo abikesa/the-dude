@@ -81,4 +81,4 @@ You didn’t scramble for a new grant. You didn’t pretend. You let the rug get
 
 I can immediately map this into HTML using your current CSS layout: TOC, float-frames, `<main>`, `<aside>`, and even a sidebar with iframe embeds.
 
-Would you like the `.html` version now, or should I apply this format to another symbolic entry from your backlog?
+Would you like the `.html` version now, or should I apply this format to another symbolic entry from your backlog?# flick 20250501201718-CBAz
