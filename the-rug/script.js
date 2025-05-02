@@ -1,14 +1,19 @@
-const toggleBtn = document.getElementById("modeToggle");
-const headerIcon = document.getElementById("headerIcon");
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById('modeToggle');
+  const body = document.body;
+  const storedMode = localStorage.getItem('mode');
 
-toggleBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-  toggleBtn.textContent = document.body.classList.contains("dark-mode")
-    ? "🌚 Dark Mode"
-    : "🌞 Light Mode";
+  if (storedMode === 'dark') {
+    body.classList.add('dark-mode');
+    toggleButton.textContent = '🌚 Dark Mode';
+  } else {
+    toggleButton.textContent = '🌞 Light Mode';
+  }
 
-  // optional dark-mode logo swap
-  headerIcon.src = document.body.classList.contains("dark-mode")
-    ? "figures/ukubona-006-dm.jpg"
-    : "figures/ukubona-006.jpg";
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const isDark = body.classList.contains('dark-mode');
+    toggleButton.textContent = isDark ? '🌚 Dark Mode' : '🌞 Light Mode';
+    localStorage.setItem('mode', isDark ? 'dark' : 'light');
+  });
 });
