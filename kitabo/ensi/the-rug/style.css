@@ -129,3 +129,12 @@ body.dark-mode #headerIcon {
   filter: invert(1) brightness(1.2);
 }
 
+.custom-details a {
+  color: inherit;
+  text-decoration: underline dotted;
+  font-weight: bold;
+}
+
+.custom-details a:hover {
+  color: #2196F3;
+}
