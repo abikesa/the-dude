@@ -69,6 +69,8 @@ details.custom-details {
   background: var(--details-bg);
 }
 
+
+
 #headerIcon {
   position: fixed;
   top: 16px;
@@ -95,10 +97,12 @@ details.custom-details {
 .responsive-iframe {
   position: relative;
   width: 100%;
-  padding-bottom: 75%; /* 4:3 aspect ratio */
+  padding-bottom: 66.66%; /* 3:2 aspect ratio for better mobile visibility */
   height: 0;
   overflow: hidden;
   border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .responsive-iframe iframe {
@@ -106,6 +110,21 @@ details.custom-details {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100%; /* this is critical */
   border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#headerIcon {
+  position: fixed;
+  top: 16px;
+  left: 40px;
+  height: 48px;
+  width: 48px;
+  z-index: 1000;
+  transition: filter 0.3s ease;
+}
+
+body.dark-mode #headerIcon {
+  filter: invert(1) brightness(1.2);
 }
