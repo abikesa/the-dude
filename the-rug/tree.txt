@@ -35,17 +35,3 @@ the-rug/
     ├── css/
     │   └── dark-mode.css        # Optional theme extensions
     └── fonts/                   # Optional: academic serif or symbol fonts
-
-Clarify to thesis committee what kind of PhD!
-- Alden: what can we do for you? (Ambushed me)
-- Julie: just write up papers! (Publishing is not required; Caffo: no thesis sections)
-- Brian: talked about Kahneman's ideas (Experts can't interprete %; so benchmark with lottery or something)
-- Self: lets benchmark the counterfactual risk, not donor risk (Later question informed consent)
-- Dorry: you've been doing a lot of thinking, but time to write (You've not been very productive)
-- Irony: perhaps because of inefficiencies and biases (I could've given you a control population)
-
-1. Aim for defense in August
-2. Update committee every two weeks
-3. Outline papers so that they sign off
-4. Remind Brian that its just papers (Julie to reiterate)
-5. Let's go, folks
